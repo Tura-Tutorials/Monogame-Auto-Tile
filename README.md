@@ -4,7 +4,7 @@ My article about it can be found <a href="https://maikatura.github.io/Auto-Tile/
 
 Sorry if I have left junk code behind I will take someday to remove all junk code :)
 
-## Controlls!
+## Controls!
 Left mouse button  - place tile<br>
 Right mouse button - remove tile<br>
 S on Keyboard - Auto tile.<br>
