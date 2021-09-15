@@ -1,0 +1,585 @@
+{
+  "FilePath": "..\\..\\..\\Content\\Tilesets\\01_Path.json",
+  "Name": "Full Tile Set",
+  "Tiles": [
+    {
+      "rect": {
+        "X": 0,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 0,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 32,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+	{
+      "rect": {
+        "X": 0,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 64,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    }
+	,
+	{
+      "rect": {
+        "X": 0,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 96,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    }
+	,
+	{
+      "rect": {
+        "X": 0,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 128,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+	{
+      "rect": {
+        "X": 0,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": false,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 64,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 96,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": true,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 128,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 160,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": false
+    },
+    {
+      "rect": {
+        "X": 192,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": false,
+      "E": true,
+      "S": false,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 224,
+        "Y": 160,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": false,
+      "W": true
+    }
+  ]
+}
+
