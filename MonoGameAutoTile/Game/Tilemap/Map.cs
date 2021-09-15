@@ -53,18 +53,7 @@ namespace MonoGameAutoTile.Game.TileMap
             CollisionLayer = new CollisionLayer(tileWidth, tileHeight, width, height);
         }
 
-        private void SetEverything(int tileWidth, int tileHeight, int width, int height)
-        {
-            
-        }
-
         
-        
-        public Map(Stream stream)
-        {
-            Layers = new List<TileLayer>();
-            Load(stream);
-        }
 
         public TileLayer.TilePositionDetail GetTileAtPosition(Vector2 position, int layerIndex)
         {
@@ -97,10 +86,7 @@ namespace MonoGameAutoTile.Game.TileMap
             immediateObjects.Add(new Tuple<int, int, TilemapObject>(x, y, objIndex));
         }
         
-        public void AddObjectAtPoint(float x, float y, TilemapObject objIndex)
-        {
-            
-        }
+     
         
 
         public void SetSize(int mapWidth, int mapHeight, int tileWidth, int tileHeight)
@@ -111,8 +97,6 @@ namespace MonoGameAutoTile.Game.TileMap
             width = mapWidth;
             height = mapHeight;
             
-            
-
             foreach (var layer in Layers)
             {
                 var newLayer = new TileLayer(tileWidth, tileHeight, mapWidth, mapHeight, layer.Name);
@@ -138,23 +122,12 @@ namespace MonoGameAutoTile.Game.TileMap
             }
         }
 
-        public void Smooth()
-        {
-            SpriteInt();
-        }
+        
         
 
         public void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets, List<TilemapObject> objects)
         {
             pSpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
-
-            
-
-            for (int i = 0; i < Layers.Count; i++)
-            {
-                Layers[i].TileCallculate(tilesets);
-                Layers[i].Draw(pSpriteBatch, camera, tilesets, objects);
-            }
 
             CollisionLayer.Draw(pSpriteBatch, camera);
 
@@ -165,52 +138,13 @@ namespace MonoGameAutoTile.Game.TileMap
                 tile.Draw(pSpriteBatch, tilePosition, tileWidth, tileHeight, tilesets);
             }
             
-            
-            
-            
             pSpriteBatch.DrawRectangle(new Vector2(0,0), new Size2(width * TileWidth, height * TileHeight), Color.White);
-            
-            
             
             pSpriteBatch.End();
             immediateObjects.Clear();
             immediateTiles.Clear();
         }
 
-        public void Save(Stream stream)
-        {
-            using (BinaryWriter writer = new BinaryWriter(stream))
-            {
-                writer.Write(width);
-                writer.Write(height);
-                writer.Write(tileWidth);
-                writer.Write(tileHeight);
-                writer.Write(Layers.Count);
-                for (int i = 0; i < Layers.Count; i++)
-                {
-                    Layers[i].Save(writer);
-                }
-                CollisionLayer.Save(writer);
-            }
-        }
-
-        private void Load(Stream stream)
-        {
-            using (BinaryReader reader = new BinaryReader(stream))
-            {
-                width = reader.ReadInt32();
-                height = reader.ReadInt32();
-                tileWidth = reader.ReadInt32();
-                tileHeight = reader.ReadInt32();
-                int layerCount = reader.ReadInt32();
-                for (int i = 0; i < layerCount; i++)
-                {
-                    Layers.Add(new TileLayer(reader));
-                }
-                CollisionLayer = new CollisionLayer(reader);
-            }
-        }
-        
         private bool IsValid(Map map, Vector2 position)
         {
             if (position.X < 0 || position.Y < 0)
@@ -226,14 +160,14 @@ namespace MonoGameAutoTile.Game.TileMap
         {
             if (!IsValid(map, thisTile))
                 return false;
-            
+
             var tile = map.Layers[activeLayer].GetTileAtTilePos(thisTile);
-            
-            if (tile.Tile.TilesetIndex == -1 && tilesetIndex ==  1)
+
+            if (tile.Tile.TilesetIndex == -1 && tilesetIndex == 1)
             {
                 return false;
             }
-            
+
             if (tile.Tile.TilesetIndex == 0 && tilesetIndex != 0)
             {
                 return true;
@@ -245,7 +179,27 @@ namespace MonoGameAutoTile.Game.TileMap
             return true;
         }
 
-        private void SpriteInt()
+        public void Smooth()
+        {
+            SmoothMap();
+        }
+
+        private int GetSpriteIndex(Vector2 pos, int tileIndex, int layerIndex)
+        {
+            bool NW = HasTile(this, pos + new Vector2(-1, -1), tileIndex, layerIndex);
+            bool N = HasTile(this, pos + new Vector2(0, -1), tileIndex, layerIndex);
+            bool NE = HasTile(this, pos + new Vector2(1, -1), tileIndex, layerIndex);
+            bool W = HasTile(this, pos + new Vector2(-1, 0), tileIndex, layerIndex);
+            bool E = HasTile(this, pos + new Vector2(1, 0), tileIndex, layerIndex);
+            bool SW = HasTile(this, pos + new Vector2(-1, 1), tileIndex, layerIndex);
+            bool S = HasTile(this, pos + new Vector2(0, 1), tileIndex, layerIndex);
+            bool SE = HasTile(this, pos + new Vector2(1, 1), tileIndex, layerIndex);
+
+            return CalculateTileFlags(E, W, N, S, NW, NE, SW, SE);
+        } 
+
+
+        private void SmoothMap()
         {
             int spriteId = -1;
 
@@ -261,16 +215,8 @@ namespace MonoGameAutoTile.Game.TileMap
 
                         var tileInx = tile.Tile.TilesetIndex;
 
-                        bool NW = HasTile(this, pos + new Vector2(-1, -1),tileInx,i);
-                        bool N = HasTile(this, pos + new Vector2(0, -1),tileInx,i);
-                        bool NE = HasTile(this, pos + new Vector2(1, -1),tileInx,i);
-                        bool W = HasTile(this, pos + new Vector2(-1, 0),tileInx,i);
-                        bool E = HasTile(this, pos + new Vector2(1, 0),tileInx,i);
-                        bool SW = HasTile(this, pos + new Vector2(-1, 1),tileInx,i);
-                        bool S = HasTile(this, pos + new Vector2(0, 1),tileInx,i);
-                        bool SE = HasTile(this, pos + new Vector2(1, 1),tileInx,i);
-                        
-                        spriteId = CalculateTileFlags(E, W, N, S, NW, NE, SW, SE);
+                        spriteId = GetSpriteIndex(pos, tileInx, i);
+
 
                         switch (spriteId)
                         {
@@ -417,18 +363,15 @@ namespace MonoGameAutoTile.Game.TileMap
                                 break;
                         }
 
-                        Console.WriteLine(pos + " " + spriteId);
                         tile.Tile.TileIndex = spriteId;
                     }
                 }
             } 
         }
         
-        private static int CalculateTileFlags(bool east, bool west, bool north, bool south, bool northWest,
-            bool northEast, bool southWest, bool southEast)
+        private int CalculateTileFlags(bool east, bool west, bool north, bool south, bool northWest, bool northEast, bool southWest, bool southEast)
         {
-            int directions = (east ? 16 : 0) | (west ? 8 : 0) |
-                             (north ? 2 : 0) | (south ? 64 : 0);
+            int directions = (east ? 16 : 0) | (west ? 8 : 0) | (north ? 2 : 0) | (south ? 64 : 0);
             directions |= ((north && west) && northWest) ? 1 : 0;
             directions |= ((north && east) && northEast) ? 4 : 0;
             directions |= ((south && west) && southWest) ? 32 : 0;
