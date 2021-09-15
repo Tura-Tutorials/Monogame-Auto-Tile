@@ -34,12 +34,6 @@
     </ItemGroup>
     <ItemGroup>
       <None Remove="Content\Textures\Map\Tiles\01_Path.json" />
-      <Content Include="Content\Textures\Map\Tiles\01_Path.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
       <None Remove="Content\Textures\Map\Tiles\01_Path.png" />
-      <Content Include="Content\Textures\Map\Tiles\01_Path.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
     </ItemGroup>
 </Project>
