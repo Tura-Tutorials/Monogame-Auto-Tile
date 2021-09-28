@@ -93,10 +93,7 @@ namespace MonoGameAutoTile.Game.TileMap
         }
         
 
-        internal ObjectLayer(BinaryReader reader) : base(reader)
-        {
-            Load(reader);
-        }
+        
 
 
         public override void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets, List<TilemapObject> objects)

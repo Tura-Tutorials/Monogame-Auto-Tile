@@ -31,13 +31,13 @@ namespace MonoGameAutoTile
             Vector2 worldPosition = camera.ScreenToWorld(mousePosition.ToVector2());
             var tile = myMap.map.GetTileAtPosition(worldPosition, 0);
             
-            if (mouseState.WasButtonJustUp(MouseButton.Left))
+            if (mouseState.WasButtonJustUp(MouseButton.Left) && tile != null)
             {
                 tile.Tile.TileIndex = 0;
                 tile.Tile.TilesetIndex = 0;
                 tile.Tile.hasSprite = true;
             }
-            else if (mouseState.WasButtonJustUp(MouseButton.Right))
+            else if (mouseState.WasButtonJustUp(MouseButton.Right) && tile != null)
             {
                 tile.Tile.TileIndex = -1;
                 tile.Tile.TilesetIndex = -1;

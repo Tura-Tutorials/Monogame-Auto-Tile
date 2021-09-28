@@ -1,0 +1,30 @@
+{
+  "FilePath": "..\\..\\..\\Content\\Tilesets\\testset.json",
+  "Name": "LOL",
+  "Tiles": [
+    {
+      "rect": {
+        "X": 0,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": true
+    },
+    {
+      "rect": {
+        "X": 32,
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "N": true,
+      "E": true,
+      "S": true,
+      "W": true
+    }
+  ]
+}

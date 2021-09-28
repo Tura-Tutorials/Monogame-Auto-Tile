@@ -350,19 +350,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\": {}
+    "C:\\Users\\zyro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\MaikaWebsite\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
+      "projectUniqueName": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
       "projectName": "MonoGameAutoTile",
-      "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\MaikaWebsite\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
-      "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\MaikaWebsite\\Monogame-Auto-Tile\\MonoGameAutoTile\\obj\\",
+      "projectPath": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
+      "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -415,12 +415,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.12, 3.1.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

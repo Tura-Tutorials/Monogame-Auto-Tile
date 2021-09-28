@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "u+t7inDfNiGO8GjwqSAONnw+br8euVEIfJk5Mxhd812yyGqbF8rGDvLWUtyBIAsZiZ3clLy0p8ZtM6Ine3LHqA==",
+  "dgSpecHash": "/8Ri8QHCs1B4XKsU6fI1WGB+LwxIpKGSQFhU0aQHaV5AXIh0vQ3UQCdQMq6z4Wf0sRPh568ZUbCOokYw6pHupQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\MaikaWebsite\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
+  "projectFilePath": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
   ],
   "logs": []
 }

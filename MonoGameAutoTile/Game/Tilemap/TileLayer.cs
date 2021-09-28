@@ -34,10 +34,7 @@ namespace MonoGameAutoTile.Game.TileMap
             }
         }
 
-        internal TileLayer(BinaryReader reader)
-        {
-            Load(reader);
-        }
+        
 
         
 
