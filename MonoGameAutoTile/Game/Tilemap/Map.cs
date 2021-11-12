@@ -125,7 +125,6 @@ namespace MonoGameAutoTile.Game.TileMap
                 var (x, y, tile) = immediateTiles[i];
                 Vector2 tilePosition = new Vector2(x * tileWidth, y * tileHeight);
                 tile.Draw(pSpriteBatch, tilePosition, tileWidth, tileHeight, tilesets);
-                Console.WriteLine("Drawing");
             }
             
             pSpriteBatch.DrawRectangle(new Vector2(0,0), new Size2(width * TileWidth, height * TileHeight), Color.White);
