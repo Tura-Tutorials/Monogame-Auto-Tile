@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net471</TargetFramework>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
     </PropertyGroup>
@@ -35,5 +35,15 @@
     <ItemGroup>
       <None Remove="Content\Textures\Map\Tiles\01_Path.json" />
       <None Remove="Content\Textures\Map\Tiles\01_Path.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Content\Textures\Map\Tiles\path.json" />
+      <Content Include="Content\Textures\Map\Tiles\path.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Map\Tiles\path.png" />
+      <Content Include="Content\Textures\Map\Tiles\path.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 </Project>

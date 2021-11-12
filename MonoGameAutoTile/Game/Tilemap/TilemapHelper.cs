@@ -13,8 +13,6 @@ namespace MonoGameAutoTile.Game.TileMap
 
         public List<Tileset> Tilesets { get; private set; }
         
-        public List<TilemapObject> Objects { get; private set; }
-
         public TilemapHelper(GraphicsDevice graphicsDevice, string contentPath)
         {
             this.graphicsDevice = graphicsDevice;

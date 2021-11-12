@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using Endorblast.Lib.TileMap;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -18,10 +17,7 @@ namespace MonoGameAutoTile.Game.TileMap
         private int width;
         private int height;
         private List<Tuple<int, int, Tile>> immediateTiles = new List<Tuple<int, int, Tile>>();
-        private List<Tuple<int, int, TilemapObject>> immediateObjects = new List<Tuple<int, int, TilemapObject>>();
-
-        private TilemapObject tempObject = new TilemapObject();
-
+        
         public int TileWidth
         {
             get => tileWidth;
@@ -60,14 +56,6 @@ namespace MonoGameAutoTile.Game.TileMap
             if (layerIndex < 0 || layerIndex >= Layers.Count)
                 return null;
 
-            
-            
-            if (Layers[layerIndex].GetType() == typeof(ObjectLayer))
-            {
-                var layerTest = (ObjectLayer) Layers[layerIndex];
-                return layerTest.GetObjAtPosition(position);
-            }
-            
             return Layers[layerIndex].GetTileAtPosition(position);
         }
 
@@ -80,11 +68,7 @@ namespace MonoGameAutoTile.Game.TileMap
         {
             immediateTiles.Add(new Tuple<int, int, Tile>(x, y, tile));
         }
-
-        public void TempObjToPoint(int x, int y, TilemapObject objIndex)
-        {
-            immediateObjects.Add(new Tuple<int, int, TilemapObject>(x, y, objIndex));
-        }
+        
         
      
         
@@ -125,10 +109,15 @@ namespace MonoGameAutoTile.Game.TileMap
         
         
 
-        public void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets, List<TilemapObject> objects)
+        public void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets)
         {
             pSpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
 
+            for (int i = 0; i < Layers.Count; i++)
+            {
+                Layers[i].Draw(pSpriteBatch, camera, tilesets);
+            }
+            
             CollisionLayer.Draw(pSpriteBatch, camera);
 
             for (int i = 0; i < immediateTiles.Count; i++)
@@ -136,12 +125,12 @@ namespace MonoGameAutoTile.Game.TileMap
                 var (x, y, tile) = immediateTiles[i];
                 Vector2 tilePosition = new Vector2(x * tileWidth, y * tileHeight);
                 tile.Draw(pSpriteBatch, tilePosition, tileWidth, tileHeight, tilesets);
+                Console.WriteLine("Drawing");
             }
             
             pSpriteBatch.DrawRectangle(new Vector2(0,0), new Size2(width * TileWidth, height * TileHeight), Color.White);
             
             pSpriteBatch.End();
-            immediateObjects.Clear();
             immediateTiles.Clear();
         }
 

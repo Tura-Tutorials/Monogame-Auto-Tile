@@ -71,7 +71,7 @@ namespace MonoGameAutoTile.Game.TileMap
             return detail;
         }
 
-        public virtual void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets, List<TilemapObject> objects)
+        public virtual void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets)
         {
             for (int x = 0; x < tiles.GetLength(0); x++)
             {
@@ -93,8 +93,6 @@ namespace MonoGameAutoTile.Game.TileMap
         public class TilePositionDetail
         {
             public Tile Tile { get; set; }
-
-            public TilemapObject obj { get; set; }
             public Point Coordinates { get; set; }
             public bool IsValidPosition { get; set; }
             

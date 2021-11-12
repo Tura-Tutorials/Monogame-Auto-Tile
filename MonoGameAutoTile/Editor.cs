@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended;
@@ -36,23 +37,26 @@ namespace MonoGameAutoTile
                 tile.Tile.TileIndex = 0;
                 tile.Tile.TilesetIndex = 0;
                 tile.Tile.hasSprite = true;
+                Console.WriteLine("Tile Left");
             }
             else if (mouseState.WasButtonJustUp(MouseButton.Right) && tile != null)
             {
                 tile.Tile.TileIndex = -1;
                 tile.Tile.TilesetIndex = -1;
                 tile.Tile.hasSprite = false;
+                Console.WriteLine("Tile Right");
             }
             
             if (keyboardState.WasKeyJustUp(Keys.S))
             {
+                Console.WriteLine("Smooth");
                 myMap.map.Smooth();
             }
         }
 
         public void Draw(SpriteBatch sb)
         {
-            myMap.map.Draw(sb, camera, myMap.tmHelper.Tilesets, myMap.tmHelper.Objects);
+            myMap.Draw(sb);
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.csproj.AssemblyReference.cache
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.AssemblyInfoInputs.cache
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.AssemblyInfo.cs
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.csproj.CoreCompileInputs.cache
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\bin\Debug\netcoreapp2.0\MonoGameAutoTile.deps.json
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\bin\Debug\netcoreapp2.0\MonoGameAutoTile.runtimeconfig.json
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\bin\Debug\netcoreapp2.0\MonoGameAutoTile.runtimeconfig.dev.json
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\bin\Debug\netcoreapp2.0\MonoGameAutoTile.dll
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\bin\Debug\netcoreapp2.0\MonoGameAutoTile.pdb
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.dll
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.pdb
+C:\Users\simon.igelstrom\Documents\GitHub\Monogame-Auto-Tile\MonoGameAutoTile\obj\Debug\netcoreapp2.0\MonoGameAutoTile.genruntimeconfig.cache

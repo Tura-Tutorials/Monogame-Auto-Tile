@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj": {}
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj": {}
   },
   "projects": {
-    "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
         "projectName": "MonoGameAutoTile",
-        "projectPath": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
-        "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Monogame-Auto-Tile\\MonoGameAutoTile\\obj\\",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Monogame-Auto-Tile\\MonoGameAutoTile\\MonoGameAutoTile.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Monogame-Auto-Tile\\MonoGameAutoTile\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net471"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net471": {
+            "targetAlias": "net471",
             "projectReferences": {}
           }
         },
@@ -37,8 +35,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net471": {
+          "targetAlias": "net471",
           "dependencies": {
             "MonoGame.Content.Builder.Task": {
               "target": "Package",
@@ -57,28 +55,12 @@
               "version": "[3.8.0.1641, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\simon.igelstrom\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }

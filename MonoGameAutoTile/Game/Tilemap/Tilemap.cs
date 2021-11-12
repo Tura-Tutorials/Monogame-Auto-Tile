@@ -23,7 +23,7 @@ namespace MonoGameAutoTile.Game.TileMap
         public Tilemap(GraphicsDevice gd)
         {
             this.gd = gd;
-            tmHelper = new TilemapHelper(gd, @"..\..\..\Content");
+            tmHelper = new TilemapHelper(gd, @"Content");
             camera = new OrthographicCamera(gd)
             {
                 MinimumZoom = 0.25f,
@@ -44,9 +44,9 @@ namespace MonoGameAutoTile.Game.TileMap
             map.SetSize(tileWidth, tileHeight, mapWidth, mapHeight);
         }
         
-        public void Draw(SpriteBatch sb, float dt)
+        public void Draw(SpriteBatch sb)
         {
-            map.Draw(sb, camera, tmHelper.Tilesets, tmHelper.Objects);
+            map.Draw(sb, camera, tmHelper.Tilesets);
         }
     }
 }
